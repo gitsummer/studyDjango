@@ -1,0 +1,39 @@
+<div class="box">
+  <div class="register login clear">
+    <div class="registerBox floatLeft">
+      <form id="login_form" name="login_form" method="post">
+      <h2>登录</h2>
+      <dl class="registerInput">
+        <dt class="clear"><span class="floatLeft bigFont">手机号：</span><span class="floatRight">还没有一点田账号？<a href="http://www.yidiantian.com/user/register.html" hidefocus="true">马上注册»</a></span></dt>
+        <dd><input type="text" id="mobile" name="mobile" value="" class="textInput textInput30" autocomplete="off"></dd>
+      </dl>
+      <dl class="registerInput">
+        <dt>密&nbsp;&nbsp;&nbsp;&nbsp;码：</dt>
+        <dd><input type="password" id="password" name="password" class="textInput textInput30" autocomplete="off"></dd>
+      </dl>
+      <dl class="registerInput">
+        <dt>验证码：</dt>
+        <dd class="clear">
+          <input type="text" id="captcha" name="captcha" class="textInput textInput30 floatLeft shortTextInput" autocomplete="off">
+          <span class="verification floatLeft marginLeft10"><img id="code_img" src="http://www.yidiantian.com/captcha/create.html?time=1438786330" class="floatLeft"></span>
+          <a href="javascript:void(0);" onclick="$('#code_img').prop('src', 'http://www.yidiantian.com/captcha/create.html?time=' + Math.random());return false;" class="floatLeft refresh marginLeft10" hidefocus="true">看不清换一张</a>
+        </dd>
+      </dl>
+      <div class="registerCheck clear">
+        <span class="floatLeft"><input type="checkbox" id="remember_login" name="remember_login" value="1" class="check" autocomplete="off"><label for="remember_login">一周内免登录</label></span>
+        <a href="http://www.yidiantian.com/user/resetpwd.html" class="floatRight" hidefocus="true">忘记密码？</a>
+      </div>
+      <div class="registerBtn">
+        <input type="submit" id="form_submit" style="display:none;" autocomplete="off">
+        <a href="javascript:void(0);" onclick="$('#form_submit').click();return false;" class="greenBtn greenBtn30" hidefocus="true">登录</a>
+      </div>
+      <div class="registerOrLine">&nbsp;</div>
+      <div class="societyLogin">
+        <ul class="clear">
+          <li class="floatLeft"><a href="http://www.yidiantian.com/user/sinawb_login.html" class="societyLoginIcon weibo" hidefocus="true">新浪微博账号登录</a></li>
+        </ul>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mallDetail
+{
+	width:718px;
+	border:1px solid #eee;
+	background:#fff;
+	padding:10px;
+	overflow:hidden;
+	position:relative;
+}
+.mallImg
+{
+	width:350px;
+	overflow:hidden;
+}
+.mallImg .mallBigImg
+{
+	width:100%;
+	height:350px;
+	overflow:hidden;
+}
+.mallImgList
+{
+	width:100%;
+}
+.mallImgList li,
+.mallImgList li img
+{
+	width:60px;
+	height:60px;
+	display:block;
+	overflow:hidden;
+}
+.mallImgList li
+{
+	margin:10px 10px 0 0;
+	border:1px solid #ddd;
+}
+.mallImgList li.current
+{
+	border:1px solid #ff9221;
+}
+
+.mallDetailTxt
+{
+	width:358px;
+}
+.mallDetailTxt .mallDetailTitle
+{
+	font-size:24px;
+	font-weight:bold;
+	color:#333;
+	line-height:30px;
+	width:100%;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.mallDetailTxt .mallDetailVol
+{
+	line-height:30px;
+	height:30px;
+	overflow:hidden;
+	color:#454545;
+	width:100%;
+}
+.mallDetailTxt .mallDetailVol dt,
+.mallDetailTxt .mallDetailVol dd
+{
+	display:block;
+	height:30px;
+	line-height:30px;
+}
+.mallDetailTxt .mallDetailVol dt
+{
+	color:#454545;
+	width:60px;
+	display:block;
+}
+.mallDetailTxt .mallDetailVol .mallDetailPrice .numeral
+{
+	font-size:20px;
+	color:#ff9221;
+}
+.mallDetailTxt .mallDetailVol .numberSlider
+{
+	margin-top:3px;
+}
+.mallDetailOpe
+{
+	
+	padding:10px;
+	background:#fafafa;
+}
+.mallDetailBtn,
+.mallDetailBtn ul
+{
+	height:40px;
+	display:block;
+	overflow:hidden;
+	width:338px;
+}
+.mallDetailBtn ul li
+{
+	height:40px;
+	display:block;
+		overflow:hidden;
+}
+.mallDetailBtn ul li .brownBtn,
+.mallDetailBtn ul li .orangeBtn,
+.mallDetailBtn ul li .disableBtn
+{
+	width:160px;
+	text-align:center;
+	overflow:hidden;
+}
+.mallDetailBtn .mallDetailProTime
+{
+	display:block;
+	height:40px;
+	line-height:40px;
+	background:#46B2E4;
+	color:#fff;
+	font-size:20px;
+	padding:0 15px;
+	font-weight:bold;
+	border-radius:2px;
+}
+.payIcon
+{
+	height:16px;
+	line-height:16px;
+	display:block;
+	padding-left:20px;
+	margin-top:7px;
+}
+.aliPayIcon
+{
+	background:url(../image/icon/media.png) 0 0 no-repeat;
+}
+.visaPayIcon
+{
+	background:url(../image/icon/visa.png) 0 3px no-repeat;
+}
+
+.hotProductBox
+{
+	width:238px;
+	border:1px solid #eee;
+	background:#fff;
+}
+.hotProductBox ul
+{
+	width:218px;
+	padding:0 10px;
+}
+.hotProductBox ul li
+{
+	width:100%;
+	display:block;
+	margin-top:10px;
+	border-bottom:1px dotted #e6e4e3;
+	padding-bottom:5px;
+	position:relative;
+}
+.hotProductBox ul li.lastOne
+{
+	border-bottom:none;
+}
+.hotProductBox ul li .hotProductImg
+{
+	width:218px;
+	height:218px;
+	overflow:hidden;
+	display:block;
+}
+.hotProductBox ul li .hotProductImg img
+{
+	width:218px;
+	height:218px;
+}
+.hotProductBox ul li h3,
+.hotProductBox ul li h3 a
+{
+	text-align:center;
+	font-size:14px;
+	font-weight:normal;
+	width:100%;
+	display:block;
+}
+.hotProductBox ul li h3
+{
+	line-height:24px;
+	padding:5px 0;
+}
+.hotProductBox ul li p
+{
+	line-height:20px;
+	text-align:center;
+	color:#666;
+}
+.hotProductBox ul li .numeral
+{
+	font-size:16px;
+}
+
+.mallGoods
+{
+	width:100%;
+}
+.mallGoods .preNav
+{
+	width:738px;
+}
+.mallGoodsCon
+{
+	width:720px;
+	padding:10px 9px;
+	border:1px solid #eee;
+	border-top:none;
+	background:#fff;
+	line-height:24px;
+	color:#454545;
+}

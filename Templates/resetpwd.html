@@ -1,0 +1,40 @@
+<form action="" method="post" id="resetpwd" name="resetpwd">
+<div class="box">
+  <div class="register">
+    <div class="registerBox">
+      <h2>重置密码</h2>
+      <dl class="registerInput">
+        <dt class="clear"><span class="floatLeft bigFont">手机号：</span><span class="floatRight">记起密码了？<a href="http://www.yidiantian.com/user/login.html" hidefocus="true">立即登录»</a></span></dt>
+        <dd><input type="text" class="textInput textInput30" name="mobile" value="" autocomplete="off"></dd>
+      </dl>
+      <dl class="registerInput">
+        <dt>验证码：</dt>
+        <dd class="clear">
+          <input type="text" name="captcha" class="textInput textInput30 floatLeft shortTextInput" autocomplete="off">
+          <span class="verification floatLeft marginLeft10"><img id="code_img" src="http://www.yidiantian.com/captcha/create.html?time=1438786142"></span>
+          <a href="javascript:void(0);" id="change_code_img" onclick="$('#code_img').prop('src','http://www.yidiantian.com/captcha/create.html?time=' + Math.random());return false;" class="floatLeft refresh marginLeft10" hidefocus="true">看不清换一张</a>
+        </dd>
+      </dl>
+      <dl class="registerInput">
+        <dt>手机校验码：</dt>
+        <dd class="clear">
+          <input type="text" name="code" value="" class="textInput textInput30 floatLeft shortTextInput" autocomplete="off">
+          <div id="code"><a href="javascript:void(0);" onclick="get_code();" class="floatLeft greenBtn greenBtn30 marginLeft10" hidefocus="true">获取手机校验码</a></div>
+        </dd>
+      </dl>
+      <dl class="registerInput">
+        <dt>新密码：</dt>
+        <dd><input type="password" name="password" class="textInput textInput30 textInputWrong" autocomplete="off"></dd>
+      </dl>
+      <dl class="registerInput">
+        <dt>确认密码：</dt>
+        <dd><input type="password" name="password_comform" class="textInput textInput30 textInputWrong" autocomplete="off"></dd>
+      </dl>
+      <div class="registerBtn marginTop25">
+        <input type="submit" id="form_submit" style="display:none;" autocomplete="off">
+        <a href="javascript:void(0);" onclick="$('#form_submit').click();return false;" class="orangeBtn orangeBtn30" hidefocus="true">重置密码</a>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
