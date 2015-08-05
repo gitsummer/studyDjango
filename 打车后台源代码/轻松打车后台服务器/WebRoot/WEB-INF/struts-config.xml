@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans />
+  <global-exceptions />
+  <global-forwards />
+ <action-mappings >                  
+                                                <!-- 配置action -->
+
+
+    <action     path="/logreg"
+				type="com.taxi.act.LogRegAction"
+				scope="request"
+				validate="true" 
+				parameter="command"                        
+		>
+			
+		</action>
+		
+		 <action     path="/PerInfo"
+				type="com.taxi.act.PerInfoAction"
+				scope="request"
+				validate="true" 
+				parameter="command"                        
+		>
+			
+		</action>
+  
+      <action     path="/PerNeed"
+				type="com.taxi.act.PerNeedAction"
+				scope="request"
+				validate="true" 
+				parameter="command"                        
+		>
+			
+		</action>
+		
+		
+		
+		 <action     path="/web/login"
+				type="com.taxi.admin.act.AdmLogAction"
+				scope="request"
+				parameter="command"                        
+		>
+		 <forward name="success" path="/WEB-INF/jsp/MainFirst.jsp"  />
+		<forward name="index" path="/index.jsp" redirect="true"/>
+		</action>
+		
+		
+		
+		
+	<action path="/web/adduser"
+ 				forward="/WEB-INF/jsp/PassAdd.jsp"
+ 		     >
+ 		</action>
+ 		
+			<action path="/web/adddri"
+ 				forward="/WEB-INF/jsp/DriAdd.jsp"
+ 		     >
+ 		</action>
+		
+		
+		<!-- 
+		 <action     path="/web/first"
+				type="com.taxi.admin.act.webInfoAction"
+				 scope="request"
+				 parameter="command"                        
+		     >
+		<forward name="modify_detail" path="/WEB-INF/jsp/PassModify.jsp"/>
+		<forward name="Dmodify_detail" path="/WEB-INF/jsp/DriModify.jsp"/>
+		<forward name="Plist_success" path="/WEB-INF/jsp/PassMain.jsp"/>
+		<forward name="Dlist_success" path="/WEB-INF/jsp/DriMain.jsp" />
+		<forward name="Olist_success" path="/WEB-INF/jsp/OrderHistory.jsp" />
+		<forward name="sucess"  path="/WEB-INF/jsp/MainFirst.jsp"/>
+		</action>
+      
+       -->
+      
+		 <action     path="/web/first"
+				type="com.taxi.admin.act.webInfoAction"
+				 scope="request"
+				 parameter="command"                        
+		>
+		
+	      <forward name="Olist_success" path="/WEB-INF/jsp/OrderHistory.jsp" />
+         <forward name="Dmodify_detail" path="/WEB-INF/jsp/DriModify.jsp"/>
+		<forward name="Dlist_success" path="/WEB-INF/jsp/DriMain.jsp" />
+		<forward name="modify_detail" path="/WEB-INF/jsp/PassModify.jsp"/>
+		<forward name="Plist_success" path="/WEB-INF/jsp/PassMain.jsp"/>
+		<forward name="sucess" path="/WEB-INF/jsp/MainFirst.jsp"/>
+		</action>
+    
+  
+  
+  
+  
+  </action-mappings >
+  <message-resources parameter="com.taxi.act.ApplicationResources" />
+  </struts-config>
+
