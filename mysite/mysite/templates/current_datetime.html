@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "‐//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<title>The current time</title>
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block title %}The current time{% endblock %}
+
+{% block content %}
+
+<div style="width:20px,height:30px; background-color:red">
+            test
+</div>
+<p>It is now {{ current_date }}.</p>
+
+{% endblock %}
+<hr>
+<p>Thanks for visiting my site.</p>
+</body>
+</html>
