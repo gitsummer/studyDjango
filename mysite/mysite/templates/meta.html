@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "‐//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+<title>The current time</title>
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block title %}The current time{% endblock %}
+
+{% block content %}
+
+<table style="border:1px">
+	{% for k,v in listMeta %}
+	<tr>
+		<td>
+			{{k}}
+		</td>
+		<td>
+			{{v}}
+		</td>
+	</tr>
+	{% endfor %}
+</table>
+
+<table style="border:1px">
+	{% for k,v in requestMeta %}
+	<tr>
+		<td>
+			{{k}}
+		</td>
+		<td>
+			{{v}}
+		</td>
+	</tr>
+	{% endfor %}
+</table>
+
+{% endblock %}
+<hr>
+<p>Thanks for visiting my site.</p>
+</body>
+</html>
